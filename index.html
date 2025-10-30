@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paolo Gjoni | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">Paolo Gjoni</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Startseite</a></li>
+      <li><a href="#about" class="nav-link">Über Mich</a></li>
+      <li><a href="#skills" class="nav-link">Projekte</a></li>
+      <li><a href="#work" class="nav-link">Bildung</a></li>
+      <li><a href="#contact" class="nav-link">Kontakt</a></li>
+      <li><a href="CV_V1.pdf" target="_blank" class="nav-link">Meine CV</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="home-container">
+      <img src="photo.JPG" alt="Me" class="profile-img">
+      <div class="intro">
+        <h1>Hallo, ich bin <span>Paolo</span></h1>
+        <p>16-jähriger Technikbegeisterter aus Albanien<br>Lernt Programmierung, Cybersecurity und Webentwicklung</p>
+        <sl-button href="#contact">Kontakt aufnehmen</sl-button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Über Mich</h2>
+        <p>Ich bin ein hochmotivierter Schüler der dritten Klasse an der Höheren Technischen Lehranstalt „Peter Mahringer“ in Shkodra, mit einem klaren Fokus auf Webentwicklung, Programmierung und Netzwerktechnologie. Mein Werdegang ist geprägt von einer starken Leidenschaft für IT, Linux, Cybersecurity und die Umsetzung praktischer Projekte.</p>
+      </div>
+      <sl-card class="card">
+        <img slot="image" src="htl.png"/>
+        <strong>Meine Schule</strong><br>Höhere Technische Lehranstalt „Peter Mahringer“<br>
+        <div slot="footer">
+          <sl-button href="https://htl-shkoder.com/" variant="primary" target="_blank">Mehr Infos</sl-button>
+        </div>
+      </sl-card>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Projekte</h2>
+    <div class="skills-container">
+      <sl-card class="card">
+        <img slot="image" src="python.jpg" id="python"/>
+        <strong>Python Datei Organizer</strong><br>Ein einfaches Python-Skript zum automatischen Organisieren von Dateien in Ordnern nach Typ.<br>
+        <div slot="footer">
+          <sl-button href="https://github.com/paologjoni/python-file-organizer.git" target="_blank"variant="primary">GitHub Repo</sl-button>
+        </div>
+      </sl-card>
+
+      <sl-card class="card">
+        <img slot="image" src="react.png"/>
+        <strong>React Wetter App</strong><br>Moderne Wetter-App, erstellt mit React und Vite, die die aktuelle Temperatur für jede Stadt anzeigt.<br>
+        <div slot="footer">
+          <sl-button href="https://github.com/paologjoni/react-weather-app.git" target="_blank"variant="primary">GitHub Repo</sl-button>
+        </div>
+      </sl-card>
+
+      <sl-card class="card">
+        <img slot="image" src="java.png" id="java"/>
+        <strong>Java Währungsumrechner</strong><br>Eine einfache Java-Desktopanwendung zum Umrechnen von Währungen in Echtzeit.<br>
+        <div slot="footer">
+          <sl-button href="https://github.com/paologjoni/java-currency-converter.git" target="_blank"variant="primary">GitHub Repo</sl-button>
+        </div>
+      </sl-card>
+
+      <sl-card class="card">
+        <img slot="image" src="htmlcssjs.png" id="htmlcssjs"/>
+        <strong>Portfolio Website</strong><br>
+        Moderne Webseite, erstellt mit HTML, CSS und ein bisschen JavaScript, um Webdesign-Fähigkeiten zu zeigen.<br>
+        <div slot="footer">
+          <sl-button href="https://github.com/paologjoni/paologjoni.github.io.git" target="_blank" variant="primary">GitHub Repo</sl-button>
+        </div>
+      </sl-card>
+
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Allgemeine und Berufliche Bildung</h2>
+    <ul class="timeline">
+      <li>
+        <h3>[01.09.2020 – Aktuell]</h3>
+        <p><b>Höhere Technische Lehranstalt für Informationstechnologie „Peter Mahringer“</b><br>
+        <a href="https://htl-shkoder.com/de" target="_blank">https://htl-shkoder.com</a></p>
+        <p><b>Adresse:</b> Straße Dede Gjon Luli, Shkodra, Albanien</p>
+      </li>
+      <li>
+        <h3>[01.07.2024 – 25.08.2024]</h3>
+        <p><b>Kellner</b> – Ermiri Palace<br>
+        <a href="https://ermiripalace.com/" target="_blank">https://ermiripalace.com</a></p>
+        <p><b>Adresse:</b> Shengjin, Albanien</p>
+      </li>
+      <li>
+        <h3>[21.06.2025 – 15.07.2025]</h3>
+        <p><b>Kellner</b> – Kompleksi Kristi</p>
+        <p><b>Adresse:</b> Rana e Hedhun, Albanien</p>
+      </li>
+      <li>
+        <h3>[06.07.2025 – 27.08.2025]</h3>
+        <p><b>Kellner</b> – Nuevo Deluxe<br>
+        <a href="https://nuevodeluxe.com/" target="_blank">https://nuevodeluxe.com</a></p>
+        <p><b>Adresse:</b> Shengjin, Albanien</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <div class="contact-text">
+      <h2>Kontakt</h2>
+      <p>Ich freue mich über jede Nachricht – ob Fragen, Vorschläge oder Zusammenarbeit.</p>
+    </div>
+    <div class="contact-cards">
+      <div class="contact-box">
+        <img src="email.png">
+        <p>paogjo20@htl-shkoder.com</p>
+      </div>
+      <div class="contact-box">
+        <img src="github.png">
+        <p><a href="https://github.com/paologjoni" target="_blank">github.com/paologjoni</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Paolo Gjoni. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.contact-box').forEach(box => {
+      const link = box.querySelector('a');
+      const email = box.querySelector('p');
+      box.style.cursor = 'pointer';
+      box.addEventListener('click', () => {
+        if (link && link.href) window.open(link.href, '_blank');
+        else if (email && email.textContent.includes('@')) location.href = `mailto:${email.textContent.trim()}`;
+      });
+    });
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
