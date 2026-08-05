@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paolo Gjoni | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">Paolo Gjoni</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Projects</a></li>
+      <li><a href="#work" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="home-container">
+      <img src="photo.JPG" alt="Paolo Gjoni" class="profile-img">
+      <div class="intro">
+        <h1>Hello, I'm <span>Paolo</span></h1>
+        <p>17-year-old tech enthusiast from Albania<br>Learning programming, cybersecurity &amp; web development</p>
+        <sl-button href="#contact">Get in touch</sl-button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container fade-in">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a highly motivated third-year student at the Higher Technical Institute "Peter Mahringer" in Shkodra, with a clear focus on web development, programming, and network technology. My journey is shaped by a strong passion for IT, Linux, cybersecurity, and building real-world projects.</p>
+      </div>
+      <sl-card class="card">
+        <img slot="image" src="htl.png" alt="HTL Peter Mahringer"/>
+        <strong>My School</strong><br>Higher Technical Institute "Peter Mahringer"<br>
+        <div slot="footer">
+          <sl-button href="https://htl-shkoder.com/" variant="primary" target="_blank">More Info</sl-button>
+        </div>
+      </sl-card>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="fade-in">Projects</h2>
+    <div class="skills-container">
+      <div class="skill-item fade-in">
+        <sl-card class="card">
+          <img slot="image" src="python.jpg" id="python" alt="Python"/>
+          <strong>Python File Organizer</strong><br>A simple Python script that automatically organizes files into folders by type.<br>
+          <div slot="footer">
+            <sl-button href="https://github.com/paologjoni/python-file-organizer.git" target="_blank" variant="primary">GitHub Repo</sl-button>
+          </div>
+        </sl-card>
+      </div>
+
+      <div class="skill-item fade-in">
+        <sl-card class="card">
+          <img slot="image" src="react.png" alt="React"/>
+          <strong>React Weather App</strong><br>Modern weather app built with React and Vite, displaying the current temperature for any city.<br>
+          <div slot="footer">
+            <sl-button href="https://github.com/paologjoni/react-weather-app.git" target="_blank" variant="primary">GitHub Repo</sl-button>
+          </div>
+        </sl-card>
+      </div>
+
+      <div class="skill-item fade-in">
+        <sl-card class="card">
+          <img slot="image" src="java.png" id="java" alt="Java"/>
+          <strong>Java Currency Converter</strong><br>A simple Java desktop app for converting currencies in real time.<br>
+          <div slot="footer">
+            <sl-button href="https://github.com/paologjoni/java-currency-converter.git" target="_blank" variant="primary">GitHub Repo</sl-button>
+          </div>
+        </sl-card>
+      </div>
+
+      <div class="skill-item fade-in">
+        <sl-card class="card">
+          <img slot="image" src="htmlcssjs.png" id="htmlcssjs" alt="HTML CSS JS"/>
+          <strong>Portfolio Website</strong><br>
+          Modern website built with HTML, CSS, and a bit of JavaScript to showcase web design skills.<br>
+          <div slot="footer">
+            <sl-button href="https://github.com/paologjoni/paologjoni.github.io.git" target="_blank" variant="primary">GitHub Repo</sl-button>
+          </div>
+        </sl-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2 class="fade-in">Education &amp; Experience</h2>
+    <ul class="timeline">
+      <li class="fade-in">
+        <h3>[01.09.2020 – Present]</h3>
+        <p><b>Higher Technical Institute for IT "Peter Mahringer"</b><br>
+        <a href="https://htl-shkoder.com/de" target="_blank">https://htl-shkoder.com</a></p>
+        <p><b>Address:</b> Dede Gjon Luli Street, Shkodra, Albania</p>
+      </li>
+      <li class="fade-in">
+        <h3>[01.07.2024 – 25.08.2024]</h3>
+        <p><b>Waiter</b> – Ermiri Palace<br>
+        <a href="https://ermiripalace.com/" target="_blank">https://ermiripalace.com</a></p>
+        <p><b>Address:</b> Shengjin, Albania</p>
+      </li>
+      <li class="fade-in">
+        <h3>[21.06.2025 – 15.07.2025]</h3>
+        <p><b>Waiter</b> – Kompleksi Kristi</p>
+        <p><b>Address:</b> Rana e Hedhun, Albania</p>
+      </li>
+      <li class="fade-in">
+        <h3>[06.07.2025 – 27.08.2025]</h3>
+        <p><b>Waiter</b> – Nuevo Deluxe<br>
+        <a href="https://nuevodeluxe.com/" target="_blank">https://nuevodeluxe.com</a></p>
+        <p><b>Address:</b> Shengjin, Albania</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <div class="contact-text fade-in">
+      <h2>Contact</h2>
+      <p>Feel free to reach out — whether it's questions, ideas, or collaboration.</p>
+    </div>
+    <div class="contact-cards fade-in">
+      <div class="contact-box">
+        <img src="email.png" alt="Email">
+        <p>paologjoni2009@gmail.com</p>
+      </div>
+      <div class="contact-box">
+        <img src="github.png" alt="GitHub">
+        <p><a href="https://github.com/paologjoni" target="_blank">github.com/paologjoni</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Paolo Gjoni. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Contact box click
+    document.querySelectorAll('.contact-box').forEach(box => {
+      const link = box.querySelector('a');
+      const email = box.querySelector('p');
+      box.style.cursor = 'pointer';
+      box.addEventListener('click', () => {
+        if (link && link.href) window.open(link.href, '_blank');
+        else if (email && email.textContent.includes('@')) location.href = `mailto:${email.textContent.trim()}`;
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        if (pageYOffset >= section.offsetTop - 100) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+      });
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinksEl = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinksEl.classList.toggle('open');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinksEl.classList.remove('open');
+      });
+    });
+
+    // Scroll fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
